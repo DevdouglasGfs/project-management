@@ -1,14 +1,31 @@
 {
-  "name": "",
+  "name": "project-management",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prepare": "husky",
+    "lint": "prettier --write .",
+    "format": "prettier --check ."
   },
   "dependencies": {
-    "astro": "^5.3.0"
+    "@astrojs/vue": "^5.0.6",
+    "astro": "^5.3.0",
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.0",
+    "postcss-sorting": "^9.1.0",
+    "postcss-utopia": "^1.1.0",
+    "prettier": "^3.5.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "husky": "^9.1.7"
   }
 }
